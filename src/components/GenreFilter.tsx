@@ -22,7 +22,7 @@ function GenreFilter({
     const isChecked = event.target.checked;
 
     const newGenreList = isChecked
-      ? [...selectedGener, clickedGenre]
+      ? [clickedGenre]
       : selectedGener.filter((genre) => genre !== clickedGenre);
 
     onChange(newGenreList);
